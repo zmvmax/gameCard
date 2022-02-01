@@ -65,12 +65,77 @@
         </ol>
         <button id="getSettingsButton">НАЧАТЬ</button>
     </section>
-    <section id="settings" class="off">
-
-    </section>
     <section id="game" class="off">
-
+        <header>
+            <div class="timerBack off"></div>
+            <div class="timerDuration off"></div>
+            <div class="sizeFields off"></div>
+            <div class="levelDificulty off"></div>
+            <div class="gamer off"></div>
+        </header>
+        <div class="gameField off"></div>
+        <footer class="off"></footer>
     </section>
+    <section id="settings" class="off">
+        <form action="" method="">
+            <label for="name" class="off">Представьтесь: <input type="text" id="name" placeholder="Имя игрока" required></label>
+            <fieldset class="timerForms off">
+                <label>Форма таймера</label>
+                <label for="timerBack">
+                    <input type="radio" name="timer" id="timerBack" value="timerBack">
+                    Таймер обратного отсчета
+                </label>
+                <label for="timerDuration">
+                    <input type="radio" name="timer" id="timerDuration" value="timerDuration">
+                    Таймер подсчета длительности
+                </label>
+            </fieldset>
+            <fieldset class="dificultVariant off">
+                <label>Вариант сложности по</label>
+                <label for="numberOfCards">
+                    <input type="radio" name="level" id="numberOfCards" value="fielSize">
+                    Размеру поля
+                </label>
+                <label for="levelDificult">
+                    <input type="radio" name="level" id="levelDificult" value="levelDificult">
+                    Уровню сложности
+                </label>
+            </fieldset>
+            <fieldset class="cardsNumber off">
+                <label>Количество картинок на поле</label>
+                <label for="sixteen">
+                    <input type="radio" name="number" id="sixteen" value="sixteen">
+                    4 x 4
+                </label>
+                <label for="thirtySix">
+                    <input type="radio" name="level" id="thirtySix" value="thirtySix">
+                    6 x 6
+                </label>
+                <label for="sixtyFour">
+                    <input type="radio" name="level" id="sixtyFour" value="sixtyFour">
+                    8 x 8
+                </label>
+            </fieldset>
+            <fieldset class="dificultyLevel off">
+                <label>Уровень сложности</label>
+                <label for="simple">
+                    <input type="radio" name="dificultyLevel" id="simple" value="simple">
+                    Простой
+                </label>
+                <label for="medium">
+                    <input type="radio" name="dificultyLevel" id="medium" value="medium">
+                    Средний
+                </label>
+                <label for="difficult">
+                    <input type="radio" name="dificultyLevel" id="difficult" value="difficult">
+                    Сложный
+                </label>
+            </fieldset>
+
+
+        </form>
+    </section>
+
 </main>
 <script src="js/js.js"></script>
 </body>

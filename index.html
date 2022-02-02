@@ -67,18 +67,18 @@
     </section>
     <section id="game" class="off">
         <header>
-            <div class="timerBack off"></div>
-            <div class="timerDuration off"></div>
-            <div class="sizeFields off"></div>
-            <div class="levelDificulty off"></div>
-            <div class="gamer off"></div>
+            <div class="viewTimerBack off"></div>
+            <div class="viewTimerDuration off"></div>
+            <div class="viewSizeFields off"></div>
+            <div class="viewLevelDificulty off"></div>
+            <div class="viewGamer off"></div>
         </header>
         <div class="gameField off"></div>
         <footer class="off"></footer>
     </section>
     <section id="settings" class="off">
         <form action="" method="">
-            <label for="name" class="off">Представьтесь: <input type="text" id="name" placeholder="Имя игрока" required></label>
+            <label id="labelName" for="name">Представьтесь: <input type="text" id="name" placeholder="Имя игрока" required></label>
             <fieldset class="timerForms off">
                 <legend>Форма таймера</legend>
                 <label for="timerBack">
@@ -130,9 +130,10 @@
                     <input type="radio" name="dificultyLevel" id="difficult" value="difficult">
                     Сложный
                 </label>
+                <hr>
+                <br>
+                <button id="startGame">НАЧАТЬ ИГРУ</button>
             </fieldset>
-
-
         </form>
     </section>
     <section class="gameFields off">

@@ -18,3 +18,18 @@ main{
 /*.off{
     display: none;
 }*/
+
+.gameFields{
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    background-color: cadetblue;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+.block{
+    box-sizing: border-box;
+    background-color: coral;
+}

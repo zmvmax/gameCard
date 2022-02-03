@@ -15,9 +15,9 @@ main{
     background: gainsboro;
     padding: 20px;
 }
-/*.off{
+.off{
     display: none;
-}*/
+}
 
 .gameFields{
     width: 800px;
@@ -32,4 +32,16 @@ main{
 .block{
     box-sizing: border-box;
     background-color: coral;
+}
+header{
+    width: 600px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.view{
+    visibility: hidden;
 }

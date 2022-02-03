@@ -30,6 +30,13 @@
 сетевой режим
     то же самое что и парный режим, только игроки сидят за разными компьютерами -->
 <main>
+    <header class="view">
+        <div class="viewTimerBack off">11</div>
+        <div class="viewTimerDuration off">22</div>
+        <div class="viewSizeFields off">33</div>
+        <div class="viewLevelDificulty off">44</div>
+        <div class="viewGamer off">55</div>
+    </header>
     <section id="manual">
       <h2>УГАДАЙКА</h2>
         <p>перед началом игры нужно:</p>
@@ -66,19 +73,14 @@
         <button id="getSettingsButton">НАЧАТЬ</button>
     </section>
     <section id="game" class="off">
-        <header>
-            <div class="viewTimerBack off"></div>
-            <div class="viewTimerDuration off"></div>
-            <div class="viewSizeFields off"></div>
-            <div class="viewLevelDificulty off"></div>
-            <div class="viewGamer off"></div>
-        </header>
         <div class="gameField off"></div>
         <footer class="off"></footer>
     </section>
     <section id="settings" class="off">
         <form action="" method="">
-            <label id="labelName" for="name">Представьтесь: <input type="text" id="name" placeholder="Имя игрока" required></label>
+            <label id="labelName" for="name">Представьтесь: <input type="text" id="name" placeholder="Имя игрока" required>
+            <input type="button" id="nameButton" value="СОХРАНИТЬ" disabled>
+            </label>
             <fieldset class="timerForms off">
                 <legend>Форма таймера</legend>
                 <label for="timerBack">
@@ -136,47 +138,50 @@
             </fieldset>
         </form>
     </section>
-    <section class="gameFields off">
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
+    <section class="wrapGameFields off">
+        <div class="gameFields">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
     </section>
 
 </main>
-<script src="js/js.js"></script>
-<script src="js/js2.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/startgame.js"></script>
+<script src="js/result.js"></script>
 </body>
 </html>

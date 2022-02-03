@@ -91,6 +91,7 @@
                     <input type="radio" name="timer" id="timerDuration" value="timerDuration">
                     Таймер подсчета длительности
                 </label>
+                <input type="button" id="timerFormsButton" value="СОХРАНИТЬ" disabled>
             </fieldset>
             <fieldset class="dificultVariant off">
                 <legend>Вариант сложности по</legend>
@@ -102,6 +103,7 @@
                     <input type="radio" name="level" id="levelDificult" value="levelDificult">
                     Уровню сложности
                 </label>
+                <input type="button" id="dificultVariantButton" value="ПЕРЕЙТИ К ВЫБОРУ" disabled>
             </fieldset>
             <fieldset class="cardsNumber off">
                 <legend>Количество картинок на поле</legend>
@@ -109,14 +111,15 @@
                     <input type="radio" name="number" id="sixteen" value="sixteen">
                     4 x 4
                 </label>
-                <label for="thirtySix">
-                    <input type="radio" name="number" id="thirtySix" value="thirtySix">
-                    6 x 6
+                <label for="twentyFour">
+                    <input type="radio" name="number" id="twentyFour" value="twentyFour">
+                    6 x 4
                 </label>
-                <label for="sixtyFour">
-                    <input type="radio" name="number" id="sixtyFour" value="sixtyFour">
-                    8 x 8
+                <label for="thirty">
+                    <input type="radio" name="number" id="thirty" value="thirty">
+                    6 x 5
                 </label>
+                <input type="button" id="cardsNumberButton" value="СОХРАНИТЬ" disabled>
             </fieldset>
             <fieldset class="dificultyLevel off">
                 <legend>Уровень сложности</legend>
@@ -132,10 +135,10 @@
                     <input type="radio" name="dificultyLevel" id="difficult" value="difficult">
                     Сложный
                 </label>
-                <hr>
-                <br>
-                <button id="startGame">НАЧАТЬ ИГРУ</button>
+                <input type="button" id="dificultyLevelButton" value="СОХРАНИТЬ" disabled>
+
             </fieldset>
+            <button id="startGame" class="off">НАЧАТЬ ИГРУ</button>
         </form>
     </section>
     <section class="wrapGameFields off">

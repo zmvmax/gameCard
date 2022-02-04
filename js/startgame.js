@@ -23,9 +23,9 @@ timerForms.addEventListener('click', function () {
             viewTimerBack.classList.remove('off');
             viewTimerBack.textContent='До конца игры осталось: 30 сек.';
         }
-        else{
-            viewTimerBack.classList.remove('off');
-            viewTimerBack.textContent='Общее время игры: 00:00:00';
+        if(getValue(timerArr)==='timerDuration'){
+            viewTimerDuration.classList.remove('off');
+/*            viewTimerBack.innerHTML='Общее время игры: <span id="hour">00</span>:<span id="minute">00</span>:<span id="secund">00</span>';*/
         }
         timerForms.classList.add('off');
         dificultVariant.classList.remove('off');
